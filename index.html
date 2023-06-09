@@ -89,7 +89,7 @@
 </Body> -->
 
 
-<!Doctype html>
+<!-- <!Doctype html>
 <html>
 
 <head>
@@ -134,5 +134,71 @@
 
 
     <script src="./js/script.js"></script>
+
+</Body> -->
+
+
+
+
+
+<!Doctype html>
+
+<html>
+
+
+<head>
+
+    <title>Simple Form</title>
+
+</head>
+
+
+<Body>
+
+
+
+    <h1>Form Example</h1>
+
+    <form name="myform" onsubmit="return displayFormValues()">
+
+        <label for="name">Name:</label> Name: <input type="text" name="name"><br/>
+
+        <span id="form_name"></span><br>
+
+
+        <label for="email">Email:</label> Email: <input type="text" name="email"><br/>
+
+        <span id="form_email"></span><br>
+
+
+        <label for="mobileno">mobileno:</label> Number: <input type="text" name="number"><br/>
+
+        <span id="form_mobileno"></span><br>
+
+        <label for="passsword">Password:</label> Password: <input type="password" name="password"><br/>
+
+        <span id="form_password"></span><br>
+
+        <input type="submit" value="Submit" onclick="printData()">
+
+    </form>
+
+
+    <div id="display">
+
+        <h1>Name : <span id="nm"></span></h1>
+
+
+        <h1>Email : <span id="ema"></span></h1>
+
+        <h1>Mobileno : <span id="mb"></span></h1>
+
+        <h1>Pass: <span id="pass"></span></h1>
+
+    </div>
+
+
+    <script src="./js/script.js"></script>
+
 
 </Body>
